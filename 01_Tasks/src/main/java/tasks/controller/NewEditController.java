@@ -78,9 +78,9 @@ public class NewEditController {
     public void setCurrentTask(Task task){
         this.currentTask=task;
         switch (clickedButton.getId()){
-            case  "btnNew" : initNewWindow("New Task");
-                break;
             case "btnEdit" : initEditWindow("Edit Task");
+                break;
+            default: initNewWindow("New Task");
                 break;
         }
     }

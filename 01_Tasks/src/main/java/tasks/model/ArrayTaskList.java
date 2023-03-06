@@ -33,7 +33,7 @@ public class ArrayTaskList extends TaskList{
         @Override
         public void remove() {
             if (lastCalled == -1){
-                throw new IllegalStateException();
+                throw new IllegalStateException("Last called is -1");
             }
             ArrayTaskList.this.remove(getTask(lastCalled));
             cursor = lastCalled;
@@ -52,7 +52,7 @@ public class ArrayTaskList extends TaskList{
 
     @Override
     public void add(Task task){
-        if (task.equals(null)) throw new NullPointerException("Task shouldn't be null");
+        if (task == null) throw new NullPointerException("Task shouldn't be null");
         if (numberOfTasks == currentCapacity-1){
             currentCapacity = currentCapacity * 2;
             Task[] withAddedTask = new Task[currentCapacity];
@@ -138,11 +138,11 @@ public class ArrayTaskList extends TaskList{
     }
     @Override
     protected ArrayTaskList clone() throws CloneNotSupportedException {
-        ArrayTaskList tasks = new ArrayTaskList();
+        ArrayTaskList taskList = new ArrayTaskList();
         for (int i = 0; i < this.tasks.length; i++){
-            tasks.add(this.getTask(i));
+            taskList.add(this.getTask(i));
         }
-        return tasks;
+        return taskList;
 
     }
 
