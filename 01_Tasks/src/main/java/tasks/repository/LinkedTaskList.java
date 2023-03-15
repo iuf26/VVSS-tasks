@@ -1,7 +1,11 @@
-package tasks.model;
+package tasks.repository;
 
+/**
+ * Clasa ce implementeaza clasa abstracta de repository folosindu-se de un LinkedList
+ */
 
 import org.apache.log4j.Logger;
+import tasks.model.Task;
 
 import java.util.Iterator;
 import java.util.LinkedList;

@@ -1,16 +1,18 @@
-package tasks.services;
+package tasks.repository;
 
 import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
-import tasks.model.LinkedTaskList;
 import tasks.model.Task;
-import tasks.model.TaskList;
 import tasks.view.*;
 
 import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+/**
+ * Clasa ce se ocupa cu citirea din fisier si scrierea in fisier a datelor de tip task
+ */
 
 public class TaskIO {
     private static final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("[yyyy-MM-dd HH:mm:ss.SSS]");

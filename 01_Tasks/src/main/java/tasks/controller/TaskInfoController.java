@@ -6,6 +6,10 @@ import tasks.model.Task;
 
 import org.apache.log4j.Logger;
 
+/**
+ * Controller pentru fereastra de task info
+ */
+
 public class TaskInfoController {
 
     private static final Logger log = Logger.getLogger(TaskInfoController.class.getName());
