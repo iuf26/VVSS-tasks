@@ -1,10 +1,15 @@
-package tasks.model;
+package tasks.repository;
 
 
 
 import org.apache.log4j.Logger;
+import tasks.model.Task;
 
 import java.util.*;
+
+/**
+ * Clasa ce implementeaza clasa abstracta de repository folosindu-se de un array
+ */
 
 public class ArrayTaskList extends TaskList{
 

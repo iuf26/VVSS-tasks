@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import tasks.model.Task;
 import tasks.services.DateService;
-import tasks.services.TaskIO;
+import tasks.repository.TaskIO;
 import tasks.services.TasksService;
 import tasks.view.Main;
 
@@ -23,6 +23,10 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
+
+/**
+ * Controller pentru fereastra principala
+ */
 
 public class Controller {
     private static final Logger log = Logger.getLogger(Controller.class.getName());

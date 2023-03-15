@@ -15,13 +15,16 @@ import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import tasks.model.Task;
 import tasks.services.DateService;
-import tasks.services.TaskIO;
+import tasks.repository.TaskIO;
 import tasks.services.TasksService;
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Date;
 
+/**
+ * Controller pentru fereastra de new/edit task
+ */
 
 public class NewEditController {
 

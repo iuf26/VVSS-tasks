@@ -1,9 +1,15 @@
-package tasks.model;
+package tasks.repository;
+
+import tasks.model.Task;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+
+/**
+ * Clasa abstracta ce stabileste operatiile pentru repoository al task-urilor
+ */
 
 public abstract class TaskList implements Iterable<Task>, Serializable  {
     public abstract void add(Task task);

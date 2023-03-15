@@ -8,13 +8,17 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import tasks.controller.Controller;
-import tasks.controller.Notificator;
-import tasks.model.ArrayTaskList;
-import tasks.services.TaskIO;
+import tasks.observer.Notificator;
+import tasks.repository.ArrayTaskList;
+import tasks.repository.TaskIO;
 import tasks.services.TasksService;
 
 import java.io.File;
 import java.io.IOException;
+
+/**
+ * Clasa principala a aplicatiei
+ */
 
 public class Main extends Application {
     public static Stage primaryStage;

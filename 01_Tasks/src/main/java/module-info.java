@@ -9,6 +9,12 @@ module tasks {
     exports tasks.model;
     opens tasks.view to javafx.fxml;
     exports tasks.view;
-    opens tasks.controller to javafx.fxml;
     exports tasks.controller;
+    exports tasks.repository;
+    opens tasks.controller to javafx.base, javafx.fxml;
+    exports tasks.services;
+    opens tasks.services to javafx.base, javafx.fxml;
+    exports tasks.observer;
+    opens tasks.observer to javafx.base, javafx.fxml;
+    opens tasks.repository to javafx.base, javafx.fxml;
 }

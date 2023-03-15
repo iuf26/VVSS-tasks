@@ -1,12 +1,15 @@
 package tasks.model;
 
 import org.apache.log4j.Logger;
-import tasks.services.TaskIO;
+import tasks.repository.TaskIO;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Clasa care implementeaza modelul
+ */
 public class Task implements Serializable, Cloneable {
     private String title;
     private Date time;
