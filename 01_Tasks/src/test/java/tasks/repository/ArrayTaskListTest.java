@@ -59,5 +59,5 @@ class ArrayTaskListTest {
     void checkTaskAddIntervalValueLessThanOneShouldThrowError() {
         //TO DO
     }
-    
+
 }
