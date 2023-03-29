@@ -41,7 +41,7 @@ public class Task implements Serializable, Cloneable {
         }
         if (interval < 1) {
             log.error("interval < than 1");
-            throw new IllegalArgumentException("interval should me > 1");
+            throw new IllegalArgumentException("interval should be > 1");
         }
         this.title = title;
         this.start = start;
