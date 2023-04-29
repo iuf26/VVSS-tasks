@@ -20,3 +20,4 @@
 2023-03-15 04:42:57 INFO  NewEditController:90 - new/edit window initializing
 2023-03-15 04:43:02 INFO  NewEditController:90 - new/edit window initializing
 2023-03-15 04:43:12 INFO  TaskInfoController:25 - task info window initializing
+2023-04-29 14:18:23 ERROR Task:43 - interval < than 1
