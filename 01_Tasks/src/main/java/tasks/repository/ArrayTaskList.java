@@ -102,6 +102,7 @@ public class ArrayTaskList extends TaskList{
     @Override
     public List<Task> getAll() {
         ArrayList<Task> tks=new ArrayList<>();
+        System.out.println(this.numberOfTasks);
         for (int i=0; i<this.numberOfTasks;i++)
             tks.add(this.tasks[i]);
         return tks;
